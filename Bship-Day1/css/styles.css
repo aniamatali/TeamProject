@@ -52,17 +52,17 @@ body {
   color:white;
 }
 
-input {
+/*input {
   display: none;
-}
+}*/
 
 .col-md-2 {
   background-color:#6d8bba;
 }
 
-.select {
+/*.select {
   background-color:orange;
-}
+}*/
 
 #a1, #a2 , #a3, #a4, #a5, #a6,
 #a7, #a10 , #a15, #a16, #a21, #a22,

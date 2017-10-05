@@ -125,10 +125,21 @@ $(document).ready(function(){
   $("span").text(player1);
   boxCk();
 
-  $("#c1, #c2 , #c3, #c4, #c5, #c6, #c7, #c10 , #c15, #c16, #c21, #c22, #c8, #c11 , #c14, #c17, #c20, #c23, #c9, #c12 , #c13, #c18, #c19, #c24, #c25, #c26, #c27, #c28, #c29, #c30, #c36, #c35, #c34, #c33, #c32, #c31").click(function() {
-    $(this).find("input[type=checkbox]").attr("checked", true);
-    $(this).addClass("select");
-  })
+
+  // $("#c1, #c2 , #c3, #c4, #c5, #c6, #c7, #c10 , #c15, #c16, #c21, #c22, #c8, #c11 , #c14, #c17, #c20, #c23, #c9, #c12 , #c13, #c18, #c19, #c24, #c25, #c26, #c27, #c28, #c29, #c30, #c36, #c35, #c34, #c33, #c32, #c31").click(function() {
+  //
+  //   var checkValue = $(this).is(":checked");
+  //   if ($(this).is(":checked")){
+  //     $(this).find("input[type=checkbox]").removeAttr("checked");
+  //     $(this).removeClass("select");
+  //   } else {
+  //     $(this).find("input[type=checkbox]").attr("checked", true);
+  //     $(this).addClass("select")
+  //     alert(checkValue)
+  //   }
+  //
+  // });
+
 
   $("form.player1Board").submit(function(event){
      event.preventDefault();

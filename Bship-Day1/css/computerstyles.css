@@ -24,9 +24,9 @@ body {
  background-repeat: no-repeat;
 }
 
-input {
+/*input {
   display: none;
-}
+}*/
 
 .player2 {
   margin-left:100px;
@@ -159,6 +159,6 @@ form {
   margin-bottom:10px;
 }
 
-.select {
+/*.select {
   background-color: orange;
-}
+}*/
