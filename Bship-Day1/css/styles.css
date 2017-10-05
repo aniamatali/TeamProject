@@ -52,6 +52,18 @@ body {
   color:white;
 }
 
+input {
+  display: none;
+}
+
+.col-md-2 {
+  background-color:#6d8bba;
+}
+
+.select {
+  background-color:orange;
+}
+
 #a1, #a2 , #a3, #a4, #a5, #a6,
 #a7, #a10 , #a15, #a16, #a21, #a22,
 #a8, #a11 , #a14, #a17, #a20, #a23,
@@ -171,9 +183,7 @@ button {
 }
 
 
-.col-md-2 {
-  background-color:#6d8bba;
-}
+
 
 .miss {
   background-color: red;

@@ -137,12 +137,20 @@ $(document).ready(function() {
   $(".playerA").text(player1.playerName);
   $(".playerB").text(player2.playerName);
   boxCk();
+  $("#ac1, #ac2 , #ac3, #ac4, #ac5, #ac6, #ac7, #ac10 , #ac15, #ac16, #ac21, #ac22, #ac8, #ac11 , #ac14, #ac17, #ac20, #ac23, #ac9, #ac12 , #ac13, #ac18, #ac19, #ac24, #ac25, #ac26, #ac27, #ac28, #ac29, #ac30, #ac36, #ac35, #ac34, #ac33, #ac32, #ac31").click(function(){
+    $(this).find("input[type=checkbox]").attr("checked", true);
+    $(this).addClass("select");
+  });
 
   $("form.player1Board").submit(function(event){
      event.preventDefault();
      player1Value = checking("player1",player1Value,board1);
    });
 
+   $("#bc1, #bc2 , #bc3, #bc4, #bc5, #bc6, #bc7, #bc10 , #bc15, #bc16, #bc21, #bc22, #bc8, #bc11 , #bc14, #bc17, #bc20, #bc23, #bc9, #bc12 , #bc13, #bc18, #bc19, #bc24, #bc25, #bc26, #bc27, #bc28, #bc29, #bc30, #bc36, #bc35, #bc34, #bc33, #bc32, #bc31").click(function(){
+     $(this).find("input[type=checkbox]").attr("checked", true);
+     $(this).addClass("select");
+   });
   $("form.player2Board").submit(function(event){
       event.preventDefault();
       player2Value = checking("player2",player2Value,board2);
