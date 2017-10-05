@@ -24,6 +24,10 @@ body {
  background-repeat: no-repeat;
 }
 
+input {
+  display: none;
+}
+
 .player2 {
   margin-left:100px;
   margin-right:100px;
@@ -153,4 +157,8 @@ button {
 
 form {
   margin-bottom:10px;
+}
+
+.select {
+  background-color: orange;
 }
