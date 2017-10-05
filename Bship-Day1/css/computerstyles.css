@@ -65,13 +65,6 @@ input {
   background-color:#639680;
 }
 
-/*.playingBoard .col-md-2{
-  background-color:green;
-}
-
-.playingBoard2 .col-md-2{
-  background-color:orange;
-}*/
 #a1, #a2 , #a3, #a4, #a5, #a6,
 #a7, #a10 , #a15, #a16, #a21, #a22,
 #a8, #a11 , #a14, #a17, #a20, #a23,
@@ -105,7 +98,7 @@ input {
   width:80px;
   height:80px;
   display: table-cell;
-  border:1px solid #43344c;
+  border:2px solid #43344c;
 }
 
 #a1:hover, #a2:hover , #a3:hover, #a4:hover, #a5:hover, #a6:hover,
