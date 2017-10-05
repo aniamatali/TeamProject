@@ -53,7 +53,7 @@ var checking = function(player,playerValue,board){
       }
     })
   } else {
-    alert("Please put the correct amount of ships")
+    alert("Please put the correct number of squares.")
     playerValue = [];
     $("#ac1, #ac2 , #ac3, #ac4, #ac5, #ac6, #ac7, #ac10 , #ac15, #ac16, #ac21, #ac22, #ac8, #ac11 , #ac14, #ac17, #ac20, #ac23, #ac9, #ac12 , #ac13, #ac18, #ac19, #ac24, #ac25, #ac26, #ac27, #ac28, #ac29, #ac30, #ac36, #ac35, #ac34, #ac33, #ac32, #ac31, #bc1, #bc2 , #bc3, #bc4, #bc5, #bc6, #bc7, #bc10 , #bc15, #bc16, #bc21, #bc22, #bc8, #bc11 , #bc14, #bc17, #bc20, #bc23, #bc9, #bc12 , #bc13, #bc18, #bc19, #bc24, #bc25, #bc26, #bc27, #bc28, #bc29, #bc30, #bc36, #bc35, #bc34, #bc33, #bc32, #bc31").removeClass("select");
     $("#ac1, #ac2 , #ac3, #ac4, #ac5, #ac6, #ac7, #ac10 , #ac15, #ac16, #ac21, #ac22, #ac8, #ac11 , #ac14, #ac17, #ac20, #ac23, #ac9, #ac12 , #ac13, #ac18, #ac19, #ac24, #ac25, #ac26, #ac27, #ac28, #ac29, #ac30, #ac36, #ac35, #ac34, #ac33, #ac32, #ac31, #bc1, #bc2 , #bc3, #bc4, #bc5, #bc6, #bc7, #bc10 , #bc15, #bc16, #bc21, #bc22, #bc8, #bc11 , #bc14, #bc17, #bc20, #bc23, #bc9, #bc12 , #bc13, #bc18, #bc19, #bc24, #bc25, #bc26, #bc27, #bc28, #bc29, #bc30, #bc36, #bc35, #bc34, #bc33, #bc32, #bc31").find("input[type=checkbox]").attr("checked", false);
@@ -73,7 +73,7 @@ var changeTurn = function(index){
 ///Checking Hit or Miss function
 var hitMiss = function(playerID,number,board){
   if(board[number-1] === 1){
-    alert("you hit a ship");
+    alert("you hit a square");
     $("#"+playerID).addClass("hit");
   } else if (board[number-1] === 0){
     alert("you miss");
@@ -120,12 +120,12 @@ var players = [player1, player2];
 
 ///Set a number of ships
 var boxCk = function(){
-  boxes = parseInt(prompt("How many ships do you want to deploy?"));
+  boxes = parseInt(prompt("How many squares do you want to deploy?"));
   if (boxes <= 36 && boxes >= 1) {
 
   }
   else {
-    alert("Please select a number of ships between 1 and 35");
+    alert("Please select a number of squares between 1 and 35");
     boxCk();
   }
 }

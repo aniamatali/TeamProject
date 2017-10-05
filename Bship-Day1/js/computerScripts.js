@@ -57,7 +57,7 @@ var computerTurn = function(){
   };
   if(index === 0 && board1[compValue-1] != 2){
     if(board1[compValue-1] === 1){
-      alert("computer hit a ship");
+      alert("Computer has hit a square.");
       $("#a"+compValue).removeClass("purplebox");
       $("#a"+compValue).addClass("hit");
       board1[compValue-1] = 2;
@@ -105,11 +105,11 @@ var winning = function(board){
 
 ///Set a number of ships
 var boxCk = function(){
-  boxes = parseInt(prompt("How many ships do you want to deploy?"));
+  boxes = parseInt(prompt("How many squares do you want to deploy?"));
   if (boxes <= 36 && boxes >= 1) {
   }
   else {
-    alert("Please select a number of ships between 1 and 35");
+    alert("Please select a number of squares between 1 and 35");
     boxCk();
   }
 }
@@ -144,7 +144,7 @@ $("#c1, #c2 , #c3, #c4, #c5, #c6, #c7, #c10 , #c15, #c16, #c21, #c22, #c8, #c11 
       index = 1;
       compSelect();
     } else {
-      alert("Please put the correct amount of ships")
+      alert("Please put the correct number of squares")
       player1Value = [];
       $("#c1, #c2 , #c3, #c4, #c5, #c6, #c7, #c10 , #c15, #c16, #c21, #c22, #c8, #c11 , #c14, #c17, #c20, #c23, #c9, #c12 , #c13, #c18, #c19, #c24, #c25, #c26, #c27, #c28, #c29, #c30, #c36, #c35, #c34, #c33, #c32, #c31").removeClass("select");
       $("#c1, #c2 , #c3, #c4, #c5, #c6, #c7, #c10 , #c15, #c16, #c21, #c22, #c8, #c11 , #c14, #c17, #c20, #c23, #c9, #c12 , #c13, #c18, #c19, #c24, #c25, #c26, #c27, #c28, #c29, #c30, #c36, #c35, #c34, #c33, #c32, #c31").find("input[type=checkbox]").attr("checked", false);
@@ -157,7 +157,7 @@ $("#c1, #c2 , #c3, #c4, #c5, #c6, #c7, #c10 , #c15, #c16, #c21, #c22, #c8, #c11 
     var number = parseInt(playerID.replace("b",""));
     if(index === 1 && board2[number-1] != 2){
       if(board2[number-1] === 1){
-        alert("you hit a ship");
+        alert("you hit a Square");
         $(this).addClass("hit");
         board2[number-1] = 2;
         winning(board2);
