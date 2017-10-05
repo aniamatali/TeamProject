@@ -27,6 +27,16 @@ body {
 /*input {
   display: none;
 }*/
+.btn-transparent{
+  background: transparent;
+
+  color: white;
+  -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+  -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+  border: 2px solid white;
+}
 
 .player2 {
   margin-left:100px;
@@ -95,14 +105,7 @@ body {
   width:80px;
   height:80px;
   display: table-cell;
-  border:1px solid black;
-}
-
-#missile1, #missile5, #missile9, #missile13, #missile17, #missile21,
-#missile2, #missile6, #missile10, #missile14, #missile18, #missile22,
-#missile3, #missile7, #missile11, #missile15, #missile19, #missile23,
-#missile4, #missile8, #missile12, #missile16, #missile20, #missile24  {
-  display:none;
+  border:1px solid #43344c;
 }
 
 #a1:hover, #a2:hover , #a3:hover, #a4:hover, #a5:hover, #a6:hover,

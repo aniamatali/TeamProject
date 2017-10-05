@@ -86,7 +86,7 @@ var winning = function(board){
       alert("you win");
       for(i=0;i<36;i++){
         if(board1[i] === 1){
-          $("#a"+compValue).removeClass("greenbox");
+          $("#a"+(i+1)).removeClass("purplebox");
           $("#a" + (i+1)).addClass("remain");
         }
       }
@@ -94,7 +94,7 @@ var winning = function(board){
       alert("Computer win")
       for(i=0;i<36;i++){
         if(board2[i] === 1){
-          $("#b"+compValue).removeClass("greenbox");
+          $("#b"+(i+1)).removeClass("greenbox");
           $("#b" + (i+1)).addClass("remain");
         }
       }
