@@ -24,9 +24,9 @@ body {
  background-repeat: no-repeat;
 }
 
-/*input {
+input {
   display: none;
-}*/
+}
 .btn-transparent{
   background: transparent;
 
@@ -162,6 +162,6 @@ form {
   margin-bottom:10px;
 }
 
-/*.select {
+.select {
   background-color: orange;
-}*/
+}
